@@ -11,6 +11,6 @@ Vagrant.configure("2") do |config|
   config.vm.synced_folder "host-share", "/home/vagrant/host-share"
 
   config.vm.provider "virtualbox" do |vb|
-    vb.customize ["modifyvm", :id, "--memory", "4096"]
+    vb.customize ["modifyvm", :id, "--memory", "8192"]
   end
 end
